@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FLRichTextEditor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<!-- Custom CSS Styling -->
+<style type="text/css">
+    
+    /* Custom CSS Styling */
+    
+    /*customcss*/
+    
+</style>
+
+<!-- jQuery Source For FLRichTextEditor -->
+<script>
+<!-- jQuery -->
+</script>
+        
+<!-- JSBeautifier Source for FLRichTextEditor -->
+<script>
+<!-- jsbeautifier -->
+</script>
+
+<!-- Javascript for FLRichTextEditor -->
+<script>
+<!--editor-->
+</script>
+
+<!-- CSS Styles for FLRichTextEditor -->
+<style type="text/css">
+
+/* Default FLRichTextEditor Styling */
+* {
+	outline: 0px solid transparent;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+}
+ 
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+      
+body {
+	padding: 10px;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+}
+
+img.fl_active {
+	border: 2px dashed #000;
+}
+      
+audio {
+	padding: 20px 0;
+}
+
+div.fl_editor_content {
+	width: 100%;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow:auto;
+}
+
+[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555; 
+}
+
+[placeholder]:empty:focus:before {
+    content: "";
+}
+	
+</style>
+
+</head>
+
+<body onLoad="fl_editor.init();">
+
+	<!-- FLRichTextEditor Editable Content -->
+	<div id="fl_editor_content" class="fl_editor_content" contenteditable="true" placeholder=""></div>
+
+	<!-- Footer -->
+	<div id="fl_editor_footer"></div>
+
+</body>
+</html>

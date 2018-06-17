@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7214CB220D35207007B541E /* FLInsterLinkAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7214CB120D35206007B541E /* FLInsterLinkAlertViewController.m */; };
+		A7214CB520D35750007B541E /* FLPreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7214CB420D35750007B541E /* FLPreViewController.m */; };
+		A74A3C5620D2025400F46447 /* FLWebTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A74A3C5520D2025400F46447 /* FLWebTextViewController.m */; };
+		A74A3C5920D2050200F46447 /* FLBaseEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A74A3C5820D2050200F46447 /* FLBaseEditViewController.m */; };
+		A74A3C5C20D21AC600F46447 /* UIFont+FLAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A74A3C5B20D21AC600F46447 /* UIFont+FLAttribute.m */; };
+		A74A3C5F20D22E7400F46447 /* FLLineTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A74A3C5E20D22E7400F46447 /* FLLineTextViewController.m */; };
+		A79A63D820D116B3001E12F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A63D720D116B3001E12F7 /* AppDelegate.m */; };
+		A79A63DB20D116B3001E12F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A63DA20D116B3001E12F7 /* ViewController.m */; };
+		A79A63DE20D116B3001E12F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79A63DC20D116B3001E12F7 /* Main.storyboard */; };
+		A79A63E020D116B4001E12F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79A63DF20D116B4001E12F7 /* Assets.xcassets */; };
+		A79A63E320D116B4001E12F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79A63E120D116B4001E12F7 /* LaunchScreen.storyboard */; };
+		A79A63E620D116B4001E12F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A63E520D116B4001E12F7 /* main.m */; };
+		A79A641320D11B67001E12F7 /* FLRichTextEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A63EF20D11B67001E12F7 /* FLRichTextEditView.m */; };
+		A79A641420D11B67001E12F7 /* FLPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A63F020D11B67001E12F7 /* FLPlaceHolderTextView.m */; };
+		A79A641520D11B67001E12F7 /* NSAttributedString+html.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A63F520D11B67001E12F7 /* NSAttributedString+html.m */; };
+		A79A641720D11B67001E12F7 /* FLLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A63F920D11B67001E12F7 /* FLLayoutManager.m */; };
+		A79A641820D11B67001E12F7 /* FLTextContainerToken.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A63FA20D11B67001E12F7 /* FLTextContainerToken.m */; };
+		A79A641920D11B67001E12F7 /* FLTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A63FB20D11B67001E12F7 /* FLTextStorage.m */; };
+		A79A641A20D11B67001E12F7 /* FLLineCursorTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A63FD20D11B67001E12F7 /* FLLineCursorTextView.m */; };
+		A79A641B20D11B67001E12F7 /* FLLineTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A640020D11B67001E12F7 /* FLLineTextView.m */; };
+		A79A641C20D11B67001E12F7 /* FLRichEditAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A640320D11B67001E12F7 /* FLRichEditAccessoryView.m */; };
+		A79A641D20D11B67001E12F7 /* FLKeyBoardAccessoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A640620D11B67001E12F7 /* FLKeyBoardAccessoryViewController.m */; };
+		A79A641E20D11B67001E12F7 /* UIWebView+FLEditorRunJS.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A640820D11B67001E12F7 /* UIWebView+FLEditorRunJS.m */; };
+		A79A641F20D11B67001E12F7 /* FLRichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = A79A640C20D11B67001E12F7 /* FLRichTextEditor.js */; };
+		A79A642020D11B67001E12F7 /* FLEditor.html in Resources */ = {isa = PBXBuildFile; fileRef = A79A640D20D11B67001E12F7 /* FLEditor.html */; };
+		A79A642120D11B67001E12F7 /* JSBeautifier.js in Resources */ = {isa = PBXBuildFile; fileRef = A79A640E20D11B67001E12F7 /* JSBeautifier.js */; };
+		A79A642220D11B67001E12F7 /* jQuery.js in Resources */ = {isa = PBXBuildFile; fileRef = A79A640F20D11B67001E12F7 /* jQuery.js */; };
+		A79A642320D11B67001E12F7 /* UIWebView+FLEditorCallBack.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A641120D11B67001E12F7 /* UIWebView+FLEditorCallBack.m */; };
+		A79A642420D11B67001E12F7 /* NSString+FLEditorHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A641220D11B67001E12F7 /* NSString+FLEditorHTML.m */; };
+		A79A642D20D11BCB001E12F7 /* FLRichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A79A642C20D11BCB001E12F7 /* FLRichTextViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A7214CB020D35206007B541E /* FLInsterLinkAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLInsterLinkAlertViewController.h; sourceTree = "<group>"; };
+		A7214CB120D35206007B541E /* FLInsterLinkAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLInsterLinkAlertViewController.m; sourceTree = "<group>"; };
+		A7214CB320D35750007B541E /* FLPreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLPreViewController.h; sourceTree = "<group>"; };
+		A7214CB420D35750007B541E /* FLPreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLPreViewController.m; sourceTree = "<group>"; };
+		A74A3C5420D2025400F46447 /* FLWebTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLWebTextViewController.h; sourceTree = "<group>"; };
+		A74A3C5520D2025400F46447 /* FLWebTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLWebTextViewController.m; sourceTree = "<group>"; };
+		A74A3C5720D2050200F46447 /* FLBaseEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLBaseEditViewController.h; sourceTree = "<group>"; };
+		A74A3C5820D2050200F46447 /* FLBaseEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLBaseEditViewController.m; sourceTree = "<group>"; };
+		A74A3C5A20D21AC600F46447 /* UIFont+FLAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+FLAttribute.h"; sourceTree = "<group>"; };
+		A74A3C5B20D21AC600F46447 /* UIFont+FLAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FLAttribute.m"; sourceTree = "<group>"; };
+		A74A3C5D20D22E7400F46447 /* FLLineTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLLineTextViewController.h; sourceTree = "<group>"; };
+		A74A3C5E20D22E7400F46447 /* FLLineTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLLineTextViewController.m; sourceTree = "<group>"; };
+		A79A63D320D116B3001E12F7 /* FLRichTextViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLRichTextViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79A63D620D116B3001E12F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A79A63D720D116B3001E12F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A79A63D920D116B3001E12F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A79A63DA20D116B3001E12F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A79A63DD20D116B3001E12F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A79A63DF20D116B4001E12F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A79A63E220D116B4001E12F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A79A63E420D116B4001E12F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79A63E520D116B4001E12F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A79A63EE20D11B67001E12F7 /* FLPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLPlaceHolderTextView.h; sourceTree = "<group>"; };
+		A79A63EF20D11B67001E12F7 /* FLRichTextEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLRichTextEditView.m; sourceTree = "<group>"; };
+		A79A63F020D11B67001E12F7 /* FLPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLPlaceHolderTextView.m; sourceTree = "<group>"; };
+		A79A63F120D11B67001E12F7 /* FLRichTextEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLRichTextEditView.h; sourceTree = "<group>"; };
+		A79A63F320D11B67001E12F7 /* NSAttributedString+html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+html.h"; sourceTree = "<group>"; };
+		A79A63F520D11B67001E12F7 /* NSAttributedString+html.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+html.m"; sourceTree = "<group>"; };
+		A79A63F820D11B67001E12F7 /* FLLineCursorTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLineCursorTextView.h; sourceTree = "<group>"; };
+		A79A63F920D11B67001E12F7 /* FLLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLayoutManager.m; sourceTree = "<group>"; };
+		A79A63FA20D11B67001E12F7 /* FLTextContainerToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTextContainerToken.m; sourceTree = "<group>"; };
+		A79A63FB20D11B67001E12F7 /* FLTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTextStorage.m; sourceTree = "<group>"; };
+		A79A63FC20D11B67001E12F7 /* FLLineTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLineTextView.h; sourceTree = "<group>"; };
+		A79A63FD20D11B67001E12F7 /* FLLineCursorTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLineCursorTextView.m; sourceTree = "<group>"; };
+		A79A63FE20D11B67001E12F7 /* FLTextContainerToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTextContainerToken.h; sourceTree = "<group>"; };
+		A79A63FF20D11B67001E12F7 /* FLLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLayoutManager.h; sourceTree = "<group>"; };
+		A79A640020D11B67001E12F7 /* FLLineTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLineTextView.m; sourceTree = "<group>"; };
+		A79A640120D11B67001E12F7 /* FLTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTextStorage.h; sourceTree = "<group>"; };
+		A79A640320D11B67001E12F7 /* FLRichEditAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLRichEditAccessoryView.m; sourceTree = "<group>"; };
+		A79A640420D11B67001E12F7 /* FLKeyBoardAccessoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLKeyBoardAccessoryViewController.h; sourceTree = "<group>"; };
+		A79A640520D11B67001E12F7 /* FLRichEditAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLRichEditAccessoryView.h; sourceTree = "<group>"; };
+		A79A640620D11B67001E12F7 /* FLKeyBoardAccessoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLKeyBoardAccessoryViewController.m; sourceTree = "<group>"; };
+		A79A640820D11B67001E12F7 /* UIWebView+FLEditorRunJS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+FLEditorRunJS.m"; sourceTree = "<group>"; };
+		A79A640920D11B67001E12F7 /* UIWebView+FLEditorCallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+FLEditorCallBack.h"; sourceTree = "<group>"; };
+		A79A640A20D11B67001E12F7 /* NSString+FLEditorHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FLEditorHTML.h"; sourceTree = "<group>"; };
+		A79A640C20D11B67001E12F7 /* FLRichTextEditor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FLRichTextEditor.js; sourceTree = "<group>"; };
+		A79A640D20D11B67001E12F7 /* FLEditor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FLEditor.html; sourceTree = "<group>"; };
+		A79A640E20D11B67001E12F7 /* JSBeautifier.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSBeautifier.js; sourceTree = "<group>"; };
+		A79A640F20D11B67001E12F7 /* jQuery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jQuery.js; sourceTree = "<group>"; };
+		A79A641020D11B67001E12F7 /* UIWebView+FLEditorRunJS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+FLEditorRunJS.h"; sourceTree = "<group>"; };
+		A79A641120D11B67001E12F7 /* UIWebView+FLEditorCallBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+FLEditorCallBack.m"; sourceTree = "<group>"; };
+		A79A641220D11B67001E12F7 /* NSString+FLEditorHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FLEditorHTML.m"; sourceTree = "<group>"; };
+		A79A642B20D11BCB001E12F7 /* FLRichTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLRichTextViewController.h; sourceTree = "<group>"; };
+		A79A642C20D11BCB001E12F7 /* FLRichTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLRichTextViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A79A63D020D116B3001E12F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A79A63CA20D116B3001E12F7 = {
+			isa = PBXGroup;
+			children = (
+				A79A63D520D116B3001E12F7 /* FLRichTextViewDemo */,
+				A79A63D420D116B3001E12F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A79A63D420D116B3001E12F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A79A63D320D116B3001E12F7 /* FLRichTextViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A79A63D520D116B3001E12F7 /* FLRichTextViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A79A63EC20D11B67001E12F7 /* Classes */,
+				A79A63D620D116B3001E12F7 /* AppDelegate.h */,
+				A79A63D720D116B3001E12F7 /* AppDelegate.m */,
+				A79A63D920D116B3001E12F7 /* ViewController.h */,
+				A79A63DA20D116B3001E12F7 /* ViewController.m */,
+				A74A3C5720D2050200F46447 /* FLBaseEditViewController.h */,
+				A74A3C5820D2050200F46447 /* FLBaseEditViewController.m */,
+				A79A642B20D11BCB001E12F7 /* FLRichTextViewController.h */,
+				A79A642C20D11BCB001E12F7 /* FLRichTextViewController.m */,
+				A74A3C5420D2025400F46447 /* FLWebTextViewController.h */,
+				A74A3C5520D2025400F46447 /* FLWebTextViewController.m */,
+				A74A3C5D20D22E7400F46447 /* FLLineTextViewController.h */,
+				A74A3C5E20D22E7400F46447 /* FLLineTextViewController.m */,
+				A7214CB020D35206007B541E /* FLInsterLinkAlertViewController.h */,
+				A7214CB120D35206007B541E /* FLInsterLinkAlertViewController.m */,
+				A7214CB320D35750007B541E /* FLPreViewController.h */,
+				A7214CB420D35750007B541E /* FLPreViewController.m */,
+				A79A63DC20D116B3001E12F7 /* Main.storyboard */,
+				A79A63DF20D116B4001E12F7 /* Assets.xcassets */,
+				A79A63E120D116B4001E12F7 /* LaunchScreen.storyboard */,
+				A79A63E420D116B4001E12F7 /* Info.plist */,
+				A79A63E520D116B4001E12F7 /* main.m */,
+			);
+			path = FLRichTextViewDemo;
+			sourceTree = "<group>";
+		};
+		A79A63EC20D11B67001E12F7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A79A63ED20D11B67001E12F7 /* FLRichTextEditor */,
+				A79A63F220D11B67001E12F7 /* Category */,
+				A79A63F720D11B67001E12F7 /* LineNumberTextView */,
+				A79A640220D11B67001E12F7 /* AccessoryViewController */,
+				A79A640720D11B67001E12F7 /* FLWebEditor */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		A79A63ED20D11B67001E12F7 /* FLRichTextEditor */ = {
+			isa = PBXGroup;
+			children = (
+				A79A63EE20D11B67001E12F7 /* FLPlaceHolderTextView.h */,
+				A79A63F020D11B67001E12F7 /* FLPlaceHolderTextView.m */,
+				A79A63F120D11B67001E12F7 /* FLRichTextEditView.h */,
+				A79A63EF20D11B67001E12F7 /* FLRichTextEditView.m */,
+			);
+			path = FLRichTextEditor;
+			sourceTree = "<group>";
+		};
+		A79A63F220D11B67001E12F7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A79A63F320D11B67001E12F7 /* NSAttributedString+html.h */,
+				A79A63F520D11B67001E12F7 /* NSAttributedString+html.m */,
+				A74A3C5A20D21AC600F46447 /* UIFont+FLAttribute.h */,
+				A74A3C5B20D21AC600F46447 /* UIFont+FLAttribute.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A79A63F720D11B67001E12F7 /* LineNumberTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A79A63FE20D11B67001E12F7 /* FLTextContainerToken.h */,
+				A79A63FA20D11B67001E12F7 /* FLTextContainerToken.m */,
+				A79A640120D11B67001E12F7 /* FLTextStorage.h */,
+				A79A63FB20D11B67001E12F7 /* FLTextStorage.m */,
+				A79A63FF20D11B67001E12F7 /* FLLayoutManager.h */,
+				A79A63F920D11B67001E12F7 /* FLLayoutManager.m */,
+				A79A63F820D11B67001E12F7 /* FLLineCursorTextView.h */,
+				A79A63FD20D11B67001E12F7 /* FLLineCursorTextView.m */,
+				A79A63FC20D11B67001E12F7 /* FLLineTextView.h */,
+				A79A640020D11B67001E12F7 /* FLLineTextView.m */,
+			);
+			path = LineNumberTextView;
+			sourceTree = "<group>";
+		};
+		A79A640220D11B67001E12F7 /* AccessoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A79A640520D11B67001E12F7 /* FLRichEditAccessoryView.h */,
+				A79A640320D11B67001E12F7 /* FLRichEditAccessoryView.m */,
+				A79A640420D11B67001E12F7 /* FLKeyBoardAccessoryViewController.h */,
+				A79A640620D11B67001E12F7 /* FLKeyBoardAccessoryViewController.m */,
+			);
+			path = AccessoryViewController;
+			sourceTree = "<group>";
+		};
+		A79A640720D11B67001E12F7 /* FLWebEditor */ = {
+			isa = PBXGroup;
+			children = (
+				A79A640B20D11B67001E12F7 /* htmlResoruce */,
+				A79A641020D11B67001E12F7 /* UIWebView+FLEditorRunJS.h */,
+				A79A640820D11B67001E12F7 /* UIWebView+FLEditorRunJS.m */,
+				A79A641120D11B67001E12F7 /* UIWebView+FLEditorCallBack.m */,
+				A79A640920D11B67001E12F7 /* UIWebView+FLEditorCallBack.h */,
+				A79A640A20D11B67001E12F7 /* NSString+FLEditorHTML.h */,
+				A79A641220D11B67001E12F7 /* NSString+FLEditorHTML.m */,
+			);
+			path = FLWebEditor;
+			sourceTree = "<group>";
+		};
+		A79A640B20D11B67001E12F7 /* htmlResoruce */ = {
+			isa = PBXGroup;
+			children = (
+				A79A640D20D11B67001E12F7 /* FLEditor.html */,
+				A79A640C20D11B67001E12F7 /* FLRichTextEditor.js */,
+				A79A640E20D11B67001E12F7 /* JSBeautifier.js */,
+				A79A640F20D11B67001E12F7 /* jQuery.js */,
+			);
+			path = htmlResoruce;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A79A63D220D116B3001E12F7 /* FLRichTextViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79A63E920D116B4001E12F7 /* Build configuration list for PBXNativeTarget "FLRichTextViewDemo" */;
+			buildPhases = (
+				A79A63CF20D116B3001E12F7 /* Sources */,
+				A79A63D020D116B3001E12F7 /* Frameworks */,
+				A79A63D120D116B3001E12F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLRichTextViewDemo;
+			productName = FLRichTextViewDemo;
+			productReference = A79A63D320D116B3001E12F7 /* FLRichTextViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A79A63CB20D116B3001E12F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Flame;
+				TargetAttributes = {
+					A79A63D220D116B3001E12F7 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = A79A63CE20D116B3001E12F7 /* Build configuration list for PBXProject "FLRichTextViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A79A63CA20D116B3001E12F7;
+			productRefGroup = A79A63D420D116B3001E12F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A79A63D220D116B3001E12F7 /* FLRichTextViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A79A63D120D116B3001E12F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79A642020D11B67001E12F7 /* FLEditor.html in Resources */,
+				A79A642120D11B67001E12F7 /* JSBeautifier.js in Resources */,
+				A79A63E320D116B4001E12F7 /* LaunchScreen.storyboard in Resources */,
+				A79A63E020D116B4001E12F7 /* Assets.xcassets in Resources */,
+				A79A641F20D11B67001E12F7 /* FLRichTextEditor.js in Resources */,
+				A79A642220D11B67001E12F7 /* jQuery.js in Resources */,
+				A79A63DE20D116B3001E12F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A79A63CF20D116B3001E12F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79A642420D11B67001E12F7 /* NSString+FLEditorHTML.m in Sources */,
+				A79A63DB20D116B3001E12F7 /* ViewController.m in Sources */,
+				A79A641920D11B67001E12F7 /* FLTextStorage.m in Sources */,
+				A79A641320D11B67001E12F7 /* FLRichTextEditView.m in Sources */,
+				A74A3C5920D2050200F46447 /* FLBaseEditViewController.m in Sources */,
+				A74A3C5C20D21AC600F46447 /* UIFont+FLAttribute.m in Sources */,
+				A74A3C5620D2025400F46447 /* FLWebTextViewController.m in Sources */,
+				A7214CB520D35750007B541E /* FLPreViewController.m in Sources */,
+				A79A641520D11B67001E12F7 /* NSAttributedString+html.m in Sources */,
+				A79A641B20D11B67001E12F7 /* FLLineTextView.m in Sources */,
+				A79A641A20D11B67001E12F7 /* FLLineCursorTextView.m in Sources */,
+				A79A641720D11B67001E12F7 /* FLLayoutManager.m in Sources */,
+				A79A63E620D116B4001E12F7 /* main.m in Sources */,
+				A79A641820D11B67001E12F7 /* FLTextContainerToken.m in Sources */,
+				A79A641E20D11B67001E12F7 /* UIWebView+FLEditorRunJS.m in Sources */,
+				A74A3C5F20D22E7400F46447 /* FLLineTextViewController.m in Sources */,
+				A79A641D20D11B67001E12F7 /* FLKeyBoardAccessoryViewController.m in Sources */,
+				A79A641420D11B67001E12F7 /* FLPlaceHolderTextView.m in Sources */,
+				A79A63D820D116B3001E12F7 /* AppDelegate.m in Sources */,
+				A79A642D20D11BCB001E12F7 /* FLRichTextViewController.m in Sources */,
+				A79A641C20D11B67001E12F7 /* FLRichEditAccessoryView.m in Sources */,
+				A7214CB220D35207007B541E /* FLInsterLinkAlertViewController.m in Sources */,
+				A79A642320D11B67001E12F7 /* UIWebView+FLEditorCallBack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A79A63DC20D116B3001E12F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79A63DD20D116B3001E12F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A79A63E120D116B4001E12F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79A63E220D116B4001E12F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A79A63E720D116B4001E12F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A79A63E820D116B4001E12F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A79A63EA20D116B4001E12F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ22KTPCG8;
+				INFOPLIST_FILE = FLRichTextViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flame.FLRichTextViewDemo.zsg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A79A63EB20D116B4001E12F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ22KTPCG8;
+				INFOPLIST_FILE = FLRichTextViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flame.FLRichTextViewDemo.zsg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A79A63CE20D116B3001E12F7 /* Build configuration list for PBXProject "FLRichTextViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79A63E720D116B4001E12F7 /* Debug */,
+				A79A63E820D116B4001E12F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79A63E920D116B4001E12F7 /* Build configuration list for PBXNativeTarget "FLRichTextViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79A63EA20D116B4001E12F7 /* Debug */,
+				A79A63EB20D116B4001E12F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A79A63CB20D116B3001E12F7 /* Project object */;
+}
