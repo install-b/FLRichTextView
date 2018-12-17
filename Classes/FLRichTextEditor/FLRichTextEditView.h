@@ -17,7 +17,21 @@
  @param richTextEditView 富文本编辑器
  @param attribute 当前光标所处环境的attribute
  */
-- (void)richTextEditView:(FLRichTextEditView *)richTextEditView attributeDidChanged:(NSDictionary<NSAttributedStringKey, id> *)attribute;
+- (void)richTextEditView:(FLRichTextEditView *)richTextEditView
+     attributeDidChanged:(NSDictionary<NSAttributedStringKey, id> *)attribute;
+
+@optional
+/**
+ 回填状态变更
+
+ @param richTextEditView 富文本编辑器
+ @param canRevoke 是否可撤销
+ @param canGoForward 是否可前进
+ */
+- (void)richTextEditView:(FLRichTextEditView *)richTextEditView
+               canRevoke:(BOOL)canRevoke
+            canGoForward:(BOOL)canGoForward;
+
 @end
 
 

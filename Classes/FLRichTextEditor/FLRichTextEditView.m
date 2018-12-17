@@ -168,23 +168,64 @@
     currentSelectRange.length += 1; // 下次输入的文本需要重置属性
     _resetRange = currentSelectRange;
 }
+
+- (NSAttributedString *)attributedText {
+    return [super attributedText] ? : [[NSAttributedString alloc] init];
+}
+
+- (void)storeCurrentAttrStringToRevoke {
+    NSAttributedString *currentAttr = self.attributedText;
+    [self.reAttrStrs addObject:currentAttr];
+}
 // 后退,撤销
 - (void)revoke {
+    if (!self.canRevoke) {
+        return;
+    }
     
+    NSAttributedString *currentAttr = self.attributedText;
+    
+    [self.goAttrStrs addObject:currentAttr];
+    
+    NSAttributedString *reAttr = _reAttrStrs.lastObject;
+    [_reAttrStrs removeLastObject];
+    
+    self.attributedText = reAttr;
 }
 // 是否可以撤销
 - (BOOL)canRevoke {
-    
-    return NO;
+    return _reAttrStrs.count;
 }
 // 前进，取消撤销
 - (void)goForward {
+    if (!self.canForward) {
+        return;
+    }
     
+    NSAttributedString *currentAttr = self.attributedText;
+    [self.reAttrStrs addObject:currentAttr];
+    
+    NSAttributedString *reAttr = _goAttrStrs.lastObject;
+    [_goAttrStrs removeLastObject];
+    
+    self.attributedText = reAttr;
 }
 // 是否可以取消撤销
 - (BOOL)canForward {
-    
-    return NO;
+    return _goAttrStrs.count;
+}
+- (NSMutableArray<NSAttributedString *> *)reAttrStrs {
+    if (!_reAttrStrs) {
+        _reAttrStrs = [[NSMutableArray alloc] init];
+    }
+    return _reAttrStrs;
+}
+
+- (NSMutableArray<NSAttributedString *> *)goAttrStrs {
+    if (!_goAttrStrs) {
+         _goAttrStrs = [[NSMutableArray alloc] init];
+    }
+    return _goAttrStrs;
 }
 #pragma mark - private method
 - (void)p_resetFont {
@@ -258,10 +299,15 @@
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
     [super handleTextDidChange];
+    BOOL shouldChangeText = YES;
+    
     if ([self.fl_delegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)]) {
-        return [self.fl_delegate textView:textView shouldChangeTextInRange:range replacementText:text];
+        shouldChangeText = [self.fl_delegate textView:textView shouldChangeTextInRange:range replacementText:text];
     }
-    return YES;
+    if (shouldChangeText) {
+        [self storeCurrentAttrStringToRevoke];
+    }
+    return shouldChangeText;
 }
 
 - (void)textViewDidChange:(UITextView *)textView {
@@ -339,17 +385,26 @@
 
 
 - (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction NS_AVAILABLE_IOS(10_0) {
+    BOOL shouldInteract = YES;
     if ([self.fl_delegate respondsToSelector:@selector(textView:shouldInteractWithURL:inRange:interaction:)]) {
-        return [self.fl_delegate textView:textView shouldInteractWithURL:URL inRange:characterRange interaction:interaction];
+        shouldInteract = [self.fl_delegate textView:textView shouldInteractWithURL:URL inRange:characterRange interaction:interaction];
     }
-    return YES;
+    if (shouldInteract) {
+        [self storeCurrentAttrStringToRevoke];
+    }
+    return shouldInteract;
 }
 
 - (BOOL)textView:(UITextView *)textView shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction API_AVAILABLE(ios(10.0)) {
+    BOOL shouldInteract = YES;
+    
     if ([self.fl_delegate respondsToSelector:@selector(textView:shouldInteractWithTextAttachment:inRange:interaction:)]) {
-       return [self.fl_delegate textView:textView shouldInteractWithTextAttachment:textAttachment inRange:characterRange interaction:interaction];
+       shouldInteract =  [self.fl_delegate textView:textView shouldInteractWithTextAttachment:textAttachment inRange:characterRange interaction:interaction];
     }
-    return YES;
+    if (shouldInteract) {
+        [self storeCurrentAttrStringToRevoke];
+    }
+    return shouldInteract;
 }
 
 #pragma mark - UIScrollViewDelegate

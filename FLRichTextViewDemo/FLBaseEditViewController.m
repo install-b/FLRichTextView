@@ -63,6 +63,8 @@
         case 1:return [self setHeadingWithButton:btn];
         case 2:return [self insertLinkWithButton:btn];
         case 3:return [self insertImageWithButton:btn];
+        case 4:return [self revoke:btn];
+        case 5:return [self goforward:btn];
         default:
             break;
     }
@@ -81,5 +83,10 @@
 - (void)insertImageWithButton:(UIButton *)btn {
     
 }
-
+- (void)revoke:(UIButton *)btn {
+    
+}
+- (void)goforward:(UIButton *)btn {
+    
+}
 @end

@@ -21,7 +21,46 @@
 @end
 
 @implementation FLRichTextViewController
-
+- (NSArray<NSDictionary<FLEditAccessoryItemKey,id> *> *)items {
+    return @[
+             @{
+                 FLEditAccessoryItemNoarmalImage   : @"FLbold",
+                 FLEditAccessoryItemSelectedImage  : @"",
+                 FLEditAccessoryItemHighlightImage : @"tabbar_profile_highlighted",
+                 FLEditAccessoryItemIdentfier      : @"BoldBtn",
+                 },
+             @{
+                 FLEditAccessoryItemNoarmalImage   : @"FLh1",
+                 FLEditAccessoryItemSelectedImage  : @"",
+                 FLEditAccessoryItemHighlightImage : @"tabbar_message_center_highlighted",
+                 FLEditAccessoryItemIdentfier      : @"HeadingBtn",
+                 },
+             @{
+                 FLEditAccessoryItemNoarmalImage   : @"FLlink",
+                 FLEditAccessoryItemSelectedImage  : @"FLlink",
+                 FLEditAccessoryItemHighlightImage : @"FLlink",
+                 FLEditAccessoryItemIdentfier      : @"FLlink",
+                 },
+             @{
+                 FLEditAccessoryItemNoarmalImage   : @"FLimage",
+                 FLEditAccessoryItemSelectedImage  : @"FLimage",
+                 FLEditAccessoryItemHighlightImage : @"FLimage",
+                 FLEditAccessoryItemIdentfier      : @"FLlink",
+                 },
+             @{
+                 FLEditAccessoryItemNoarmalImage   : @"FLlink",
+                 FLEditAccessoryItemSelectedImage  : @"FLlink",
+                 FLEditAccessoryItemHighlightImage : @"FLlink",
+                 FLEditAccessoryItemIdentfier      : @"revoke",
+                 },
+             @{
+                 FLEditAccessoryItemNoarmalImage   : @"FLimage",
+                 FLEditAccessoryItemSelectedImage  : @"FLimage",
+                 FLEditAccessoryItemHighlightImage : @"FLimage",
+                 FLEditAccessoryItemIdentfier      : @"goforward",
+                 },
+             ];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor lightGrayColor];
@@ -59,6 +98,13 @@
     UIImagePickerController *pickVc = [[UIImagePickerController alloc] init];
     pickVc.delegate = self;
     [self presentViewController:pickVc animated:YES completion:nil];
+}
+
+- (void)revoke:(UIButton *)btn {
+    [self.statusTextView revoke];
+}
+- (void)goforward:(UIButton *)btn {
+    [self.statusTextView goForward];
 }
 #pragma mark - FLStatusEditAssetsPickerViewControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
