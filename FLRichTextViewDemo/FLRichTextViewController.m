@@ -48,15 +48,15 @@
                  FLEditAccessoryItemIdentfier      : @"FLlink",
                  },
              @{
-                 FLEditAccessoryItemNoarmalImage   : @"FLlink",
-                 FLEditAccessoryItemSelectedImage  : @"FLlink",
-                 FLEditAccessoryItemHighlightImage : @"FLlink",
+                 FLEditAccessoryItemNoarmalImage   : @"revoke",
+                 FLEditAccessoryItemSelectedImage  : @"revoke",
+                 FLEditAccessoryItemHighlightImage : @"revoke",
                  FLEditAccessoryItemIdentfier      : @"revoke",
                  },
              @{
-                 FLEditAccessoryItemNoarmalImage   : @"FLimage",
-                 FLEditAccessoryItemSelectedImage  : @"FLimage",
-                 FLEditAccessoryItemHighlightImage : @"FLimage",
+                 FLEditAccessoryItemNoarmalImage   : @"goforward",
+                 FLEditAccessoryItemSelectedImage  : @"goforward",
+                 FLEditAccessoryItemHighlightImage : @"goforward",
                  FLEditAccessoryItemIdentfier      : @"goforward",
                  },
              ];
