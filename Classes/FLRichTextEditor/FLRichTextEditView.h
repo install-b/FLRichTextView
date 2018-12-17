@@ -60,6 +60,25 @@
  */
 - (void)insertImage:(UIImage *)image withURL:(NSURL *)URL;
 
+/**
+ 后退,撤销
+ */
+- (void)revoke;
+
+/**
+ 是否可以撤销
+ */
+- (BOOL)canRevoke;
+
+/**
+ 前进，取消撤退
+ */
+- (void)goForward;
+
+/**
+ 是否可以取消撤退
+ */
+- (BOOL)canForward;
 @end
 
 

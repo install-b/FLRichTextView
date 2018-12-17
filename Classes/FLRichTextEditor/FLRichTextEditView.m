@@ -20,6 +20,12 @@
 
 /* 插入附件文本的位置 */
 @property (nonatomic,assign) NSRange insertAttachmentRange;
+
+// 撤销记录
+@property (nonatomic,strong) NSMutableArray <NSAttributedString *>*reAttrStrs;
+// 前进记录
+@property (nonatomic,strong) NSMutableArray <NSAttributedString *>*goAttrStrs;
+
 @end
 
 @implementation FLRichTextEditView
@@ -162,7 +168,24 @@
     currentSelectRange.length += 1; // 下次输入的文本需要重置属性
     _resetRange = currentSelectRange;
 }
-
+// 后退,撤销
+- (void)revoke {
+    
+}
+// 是否可以撤销
+- (BOOL)canRevoke {
+    
+    return NO;
+}
+// 前进，取消撤销
+- (void)goForward {
+    
+}
+// 是否可以取消撤销
+- (BOOL)canForward {
+    
+    return NO;
+}
 #pragma mark - private method
 - (void)p_resetFont {
     if (self.isCurrentBold) {

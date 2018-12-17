@@ -54,7 +54,7 @@
     return _placeHolderLabel;
 }
 
-#pragma mark - ......::::::: override :::::::......
+#pragma mark - override
 - (void)layoutSubviews {
     [super layoutSubviews];
     [self p_updatePlaceholderFrame];
@@ -81,7 +81,7 @@
     // 处理文字
     [self p_handlePlaceholder];
 }
-#pragma mark - ......::::::: private :::::::......
+#pragma mark -  private 
 - (void)p_updatePlaceholderFrame {
     
     _placeHolderLabel.font = self.font;
@@ -97,7 +97,7 @@
     }
 }
 
-#pragma mark - ......::::::: public :::::::......
+#pragma mark - interface
 
 - (void)handleTextDidChange {
     
